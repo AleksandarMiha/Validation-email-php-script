@@ -22,6 +22,15 @@ else {
 }
 echo valid_email("abcexample.com")."\n";
 echo valid_email("abcexafsafdsample.com");
+	
+	//this is second way
+$email = "john.doe@example.com";
+
+if (!filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+  echo("$email. is a valid email address");
+} else {
+  echo("$email is not a valid email address");
+}
 
 ?>
 </body>
